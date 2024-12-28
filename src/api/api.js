@@ -26,8 +26,13 @@ export const addcolor = async (colorArray) => {
     // return response.data;
 }
 
-export const getcolors = async () => {
-    const response = await axiosInstance.get('/getAllcolor');
+export const getcolors = async (page , limit) => {
+    const response = await axiosInstance.get('/getAllcolor',{
+        params:{
+            page,
+            limit
+        }
+    });
 
     return response.data;
 }
