@@ -21,9 +21,6 @@ export const addcolor = async (colorArray) => {
     } catch (error) {
         console.log(`${error.message} this is error--`);
     }
-    // const response = await axiosInstance.post('/color',color);
-    // console.log(`${response} this is response`)
-    // return response.data;
 }
 
 export const getcolors = async (page , limit) => {
