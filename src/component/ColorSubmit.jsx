@@ -27,10 +27,10 @@ const ColorSubmit = () => {
     };
 
     return (
-        <div>
-            <Grid container spacing={2}>
+        <div  style={{marginTop:"100px",marginRight:"100px"}}>
+            <Grid container spacing={2} style={{ display:'grid',justifyItems:'center',alignItems:'center',gridTemplateColumns:'1fr 1fr',gridTemplateRows:'auto auto',rowGap:'20px',columnGap:'5px'}}>
                 {colors.map((color) => (
-                    <Grid item xs={3} key={color}>
+                    <Grid item xs={3} key={color} style={{width:'1000px'}}>
                         <Button
                             variant="contained"
                             style={{ backgroundColor: color, width: '100%', height: '100px' }}
@@ -40,10 +40,12 @@ const ColorSubmit = () => {
                         </Button>
                     </Grid>
                 ))}
-            </Grid>
-            <Button variant="contained" color="primary" onClick={handleSubmit}>
+             </Grid>
+             <Grid  style={{display:'flex',justifyContent:'center',alignItems:'center',marginTop:'20px'}}>
+            <Button  variant="contained" color="primary" onClick={handleSubmit}>
                 Submit
             </Button>
+            </Grid>
         </div>
     );
 };

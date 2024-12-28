@@ -5,7 +5,7 @@ import ColorSubmit from '../component/ColorSubmit';
 const HomePage = () => {
     return (
         <div>
-            <h1>Select a Color</h1>
+            {/* <h1>Select a Color</h1> */}
             <ColorSubmit />
             {/* <FetchColor/> */}
         </div>
